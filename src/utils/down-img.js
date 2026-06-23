@@ -2,7 +2,7 @@ const FS = require('fs'),
   Path = require('path'),
   { statAsync, mkdirAsync, accessAsync } = require('wgl-node-utils'),
   { to } = require('await-to-js'),
-  request = require('request');
+  request = require('superagent');
 
 /**
  * 下载网络图片
@@ -31,7 +31,7 @@ const downImg = (opts = {}, { output = './images', prefix, filename }) =>
       return;
     }
     request
-      .get(opts)
+      .get(opts.url)
       .on('response', async res => {
         // console.log(res.headers['content-type']);
         // path += '.' + res.headers['content-type'].split('/')[1];

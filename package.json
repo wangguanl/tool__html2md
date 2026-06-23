@@ -4,10 +4,9 @@
   },
   "dependencies": {
     "await-to-js": "^3.0.0",
-    "cheerio": "^1.0.0-rc.12",
-    "request": "^2.88.2",
-    "superagent": "^8.0.8",
-    "turndown": "^7.1.2",
+    "cheerio": "^1.2.0",
+    "superagent": "^10.3.0",
+    "turndown": "^7.2.4",
     "wgl-node-utils": "^1.0.0",
     "wgl-utils": "^1.2.1"
   }
